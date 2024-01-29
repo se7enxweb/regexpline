@@ -1,11 +1,16 @@
-Datatype extension for eZ publish 4.x (License: GPL)
-----------------------------------------------------
+# regexpline
+
+Provides a regular expression datatype for server side validation of editor's content edits within eZ Publish.
+
+A datatype extension for eZ Publish
+
+License: GPL
 
 Provides a regular expression datatype for eZ publish.
 
 
-What is it?
------------
+# What is it?
+
 For end users it will look like the standard "Text line" datatype that ships with eZ publish.
 
 The biggest difference is that the input will be validated against a regular expression. This enables you to make sure the input meets certain criteria.
@@ -13,9 +18,10 @@ The biggest difference is that the input will be validated against a regular exp
 It can act like a regular "Text line" datatype by allowing all input (regexp: /.*/).
 
 
-Features
---------
+# Features
+
 A number between square brackets denotes the version number where said feature has been introduced.
+
 If no indication is present, version 1.0 contains the feature.
 
 - Check user input against a regular expression (Perl-compatible)
@@ -40,8 +46,8 @@ If no indication is present, version 1.0 contains the feature.
 - PHP5 support for eZ Publish 4.x [3.0]
 
 
-Information
------------
+# Information
+
 While editing a contentclass, you will be able to define how the content of a regexpline attribute will be validated.
 
 You can choose two paths:
@@ -66,21 +72,21 @@ allows you to construct a custom string of these subpatterns. The custom string 
 construct the contentclass to do so.
 
 
-Planned Features
-----------------
+# Planned Features
+
 These features are NOT available yet, but they're coming.
 
 No planned features at the time of writing
 
 
-Requirements
-------------
+# Requirements
+
 - A suitable eZ publish version: 4.0.
 - Knowledge of Perl Compatible Regular Expression syntax (http://www.php.net/manual/en/ref.pcre.php)
 
 
-Installation
-------------
+# Installation
+
 You can always find the latest version of this extension @
 http://pubsvn.ez.no/community/trunk/extension/regexpline
 
@@ -96,8 +102,8 @@ http://ez.no/community/contribs
 - Clear the template override cache to make sure eZ publish picks up the templates in the extension.
 
 
-Bugs? Comments? Wishes?
------------------------
+# Bugs? Comments? Wishes?
+
 - Bugs: If you report a bug, please make sure you have a minimal testcase so I can reproduce the problem.
   If I can't reproduce it, I can't fix it.
 
@@ -110,16 +116,16 @@ Direct all (fan|bug|wish)mail at: hans <dotty> melis <atty> gmail <dotty> com
 Please note that this datatype has been developed in my spare time, and is supplied as is. I'm not responsible for any data loss or failures. YMMV!
 
 
-Tips & Tricks
--------------
+# Tips & Tricks
+
 1. If you want to refer to the complete text that matched the regular expression in the object name pattern, you can use <0> as tag.
 
 
-Copyright
----------
+# Copyright
 
 Regular Expression datatype for eZ publish 4.x
-Copyright (C) 2005-2008  Hans Melis
+
+Copyright (C) 2005 - 2008  Hans Melis
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License version 2 as
